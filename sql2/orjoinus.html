@@ -1,0 +1,250 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+<script src="./js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {.bd-placeholder-img-lg
+         {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  <!-- <script type="text/javascript">
+     function sendit(){
+         var email = document.f.my_add.value;
+         var regex = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/;
+         var jumin1 = document.f.my_num.value.substr(0,6);
+         var jumin2 = document.f.my_num.value.substr(6,7);
+         var msg, ss, cc;
+
+         if(f.firstName.value == ""){
+             alert("Please enter your FirstName.")
+             f.firstName.focus()
+             return false;
+             }
+
+         for(i=0; i<document.f.firstName.value.length; i++){
+             ch = document.f.firstName.value.charAt(i)
+             if(!(ch >= '0' && ch <= '9')&& !(ch >= 'a' && ch <= 'z')&& !(ch >= 'A' && ch <= 'Z')){
+                 alert("ID can only be uppercase and lowercase letters and numbers.")
+                 document.f.firstName.focus()
+                 document.f.firstName.select()
+                 return false;
+             }
+         }
+
+         document(f.submit)
+         }-->
+</script>
+  </head>
+  <body class="bg-light">
+
+    <div class="container">
+  <div class="py-5 text-left">
+    <img class="d-block mx-auto mb-4" src="konkuk2.jpg" alt="" width="300" height="150">
+    <h2>Sign Up</h2>
+    <p class="lead">간단한 정보만 기재하면 됩니다.</p>
+  </div>
+      <form class="card p-2">
+
+      </form></div>
+<div class="container">
+    <div class="outer">
+     <div class="inner">
+      <div class="centered">
+    <div class="col-md-8 order-md-1">
+      <form class="needs-validation" novalidate>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="firstName">First name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="성" value="" maxlength="2" required>
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="lastName">Last name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="이름" value="" maxlength="5" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+        </div>
+        </form>
+        <br>
+        <div class="mb-3">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <label for="Username"><span class="input-group-text">Username</span></label>
+            </div>
+            <input type="text" class="form-control" id="username" placeholder="닉네임" required>
+            <div class="invalid-feedback" style="width: 100%;">
+              Your username is required.
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <div class="mb-3">
+          <label for="email">Email <span class="text-muted">(Optional)</span></label>
+          <input type="email" class="form-control" id="email" placeholder="min-sang-gi@kku.ac.kr">
+          <div class="invalid-feedback">
+            Please enter a valid email address.
+          </div>
+        </div>
+        <br>
+        <div class="mb-3">
+          <label for="address">Student ID</label>
+          <input type="text" class="form-control" id="address" placeholder="학번" required>
+          <div class="invalid-feedback">
+            Please enter your student ID.
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">Department</label>
+            <select class="custom-select d-block w-100" id="country" required>
+              <option value="">Choose...</option>
+              <optgroup label="디자인대학">
+                 <option>산업디자인전공</option>
+                 <option>실내디자인전공</option>
+                 <option>패션디자인전공</option>
+                 <option>시각영상디자인전공</option>
+                 <option>미디어콘텐츠전공</option>
+                 <option>조형예술학과</option>
+              </optgroup>
+              <optgroup label="과학기술대학">
+                   <option>기계전자전공</option>
+                   <option>소프트웨어전공</option>
+                   <option>의학공학전공</option>
+                   <option>녹색환경시스템전공</option>
+                   <option>에너시소재학전공</option>
+              </optgroup>
+              <optgroup label="의료생명대학">
+                   <option>바이오의약학전공</option>
+                   <option>바이오생명공학전공</option>
+                   <option>뷰티화장품전공</option>
+                   <option>간호학과</option>
+                   <option>사회복지학과</option>
+                   <option>스포츠건강학전공</option>
+                   <option>골프산업전공</option>
+              </optgroup>
+              <optgroup label="인문사회융합대학"
+                   <option>경영학전공</option>
+                   <option>경제통상학전공</option>
+                   <option>경찰학과</option>
+                   <option>문헌정보학과</option>
+                   <option>유아교육학과</option>
+                   <option>신문방송학전공</option>
+                   <option>동화·한국어문화전공</option>
+                   <option>영어문화학전공</option>
+              </optgroup>
+            </select>
+
+            <div class="invalid-feedback">
+              Please select a valid department.
+            </div>
+          </div>
+        </div>
+
+        <hr class="mb-4">
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="same-address">
+          <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+        </div>
+        <div class="custom-control custom-checkbox">
+          <input type="checkbox" class="custom-control-input" id="save-info">
+          <label class="custom-control-label" for="save-info">Save this information for next time</label>
+        </div>
+        <hr class="mb-4">
+
+        <h4 class="mb-3">Payment</h4>
+
+        <div class="d-block my-3">
+          <div class="custom-control custom-radio">
+            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+            <label class="custom-control-label" for="credit">Credit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="debit">Debit card</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+            <label class="custom-control-label" for="paypal">PayPal</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cc-name">Name on card</label>
+            <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            <small class="text-muted">Full name as displayed on card</small>
+            <div class="invalid-feedback">
+              Name on card is required
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="cc-number">Credit card number</label>
+            <input type="text" class="form-control" id="cc-number" placeholder="" required>
+            <div class="invalid-feedback">
+              Credit card number is required
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3 mb-3">
+            <label for="cc-expiration">Expiration</label>
+            <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+            <div class="invalid-feedback">
+              Expiration date required
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="cc-cvv">CVV</label>
+            <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+            <div class="invalid-feedback">
+              Security code required
+            </div>
+          </div>
+        </div>
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to Sign Up</button>
+      </form>
+    </div>
+  </div>
+</div></div></div></div>
+</div>
+ <!--<footer class="text-muted text-center text-small">
+    <p class="">&copy; 2017-2019 Company Name</p>
+    <ul class="list-inline">
+      <li class="list-inline-item"><a href="#">Privacy</a></li>
+      <li class="list-inline-item"><a href="#">Terms</a></li>
+      <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+  </footer>-->
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script>
+        <script src="form-validation.js"></script></body>
+</html>
